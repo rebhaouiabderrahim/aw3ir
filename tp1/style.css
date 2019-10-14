@@ -1,0 +1,9 @@
+body{
+	margin:auto 300px;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+        margin:0px auto;
+    }
+}
