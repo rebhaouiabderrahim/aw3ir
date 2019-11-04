@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript" src="formulaire.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body style=" background:gray;"> 
+<h1>Saisie d'une fiche "Personne"</h1>
+	<form >
+	<table style=" background:white; width:510px; margin:10px" >
+<tr>
+	<td> Nom</td>
+	<td> <input type="text" name="nom" id="nom" placeholder="Votre Nom"> <span id="" style="color:red;"> </span>  </td>
+</tr>
+<tr>
+	<td> Prénom</td>
+	<td> <input type="text" name="prenom" id="prenom" placeholder="Votre Prenom">  </td>
+</tr>
+<tr>
+	<td> Date de naissance</td>
+	<td> <input type="text" name="dateDeNaissance" id="dateDeNaissance" placeholder="JJ/MM/AAAA">  </td>
+</tr>
+<tr>
+	<td> Adress</td>
+	<td> <input type="text" name="adresse" id="adresse" placeholder="Votre Adress">  </td>
+</tr>
+<tr>
+	<td> Mail</td>
+	<td> <input type="text" name="mail" id="mail" placeholder="Votre Mail">  </td>
+</tr>
+<tr>
+	<td> </td>
+	<td> <input type="button" onclick="validation()" value="Valider">  </td>
+</tr>
+
+
+	</table>
+	</form>
+
+	<div  id="error">  <ul>
+		<li id="missNom"> </li>
+		<li id="missPrenom"></li>
+		<li id="missDate"> </li>
+		<li id="missAdresse"></li>
+		<li id="missMail"></li>
+	</ul> </div>
+
+	<div id="resultat"> </div>
+</body>
+</html>
