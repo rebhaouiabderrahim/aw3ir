@@ -87,7 +87,7 @@ else{
 //		window.alert("il faut remplir les champs" +list );
 
 
-		$(".modal-title").text('Message Modal');
+		$(".modal-title").text('error');
 		$(".modal-body").html('les champs '+error + ' doivent être remplis');
 }
 	$('#myModal').modal("show");
