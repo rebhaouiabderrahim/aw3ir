@@ -1,0 +1,162 @@
+import java.util.*;
+import java.io.*;
+
+Java Loops II
+
+class Solution{
+    public static void main(String []argh){
+        Scanner in = new Scanner(System.in);
+        int t=in.nextInt();
+        for(int i=0;i<t;i++){
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int n = in.nextInt();
+            
+
+                int s=a+b;
+                String m=""+s;
+                for(int j=1;j<n;j++){
+                s+=(Math.pow(2,j))*b;
+                m+=" "+s;
+                }
+                System.out.println(m);
+        }                 
+
+        in.close();
+    }
+}
+
+________________________________________________________________
+Java Datatypes
+
+
+import java.util.*;
+import java.io.*;
+
+
+
+class Solution{
+    public static void main(String []argh)
+    {
+
+
+
+        Scanner sc = new Scanner(System.in);
+        int t=sc.nextInt();
+
+        for(int i=0;i<t;i++)
+        {
+
+            try
+            {
+                long x=sc.nextLong();
+                System.out.println(x+" can be fitted in:");
+                if(x>=-128 && x<=127)
+                System.out.println("* byte");
+                else if(x>=-32768 && x<=32768){
+                System.out.println("* short");
+                System.out.println("* int");
+                System.out.println("* long");
+                }
+                else if(x>=-21478365*Math.exp(9) && x<=21478365*Math.exp(9)){
+                System.out.println("* int");
+                System.out.println("* long");
+                }
+                else
+                System.out.println("* long");
+
+                
+            }
+            catch(Exception e)
+            {
+                System.out.println(sc.next()+" can't be fitted anywhere.");
+            }
+
+        }
+    }
+}
+
+
+
+____________________________
+
+  Scanner scanner = new Scanner(System.in);
+        
+        String X1= scanner.nextLine();
+        System.out.println("1 "+X1);
+        String X2= scanner.nextLine();
+        System.out.println("2 "+X2);
+
+        String X3= scanner.nextLine();
+        System.out.println("3 "+X3);
+________________________________________
+Java End-of-file
+
+  Scanner scanner = new Scanner(System.in);
+        for (int i=1;i<22;i++){
+        if(scanner.hasNextLine()==true){
+        String X1= scanner.nextLine();
+        System.out.println(i+" "+X1);
+    
+        }
+
+  Scanner input = new Scanner(System.in);
+        int i = 1;
+        while(input.hasNext())
+        {
+            String line = input.nextLine();
+            System.out.println(i + " "+ line);
+            i++;
+        }
+
+________________________________________________________________
+Java Static Initializer Block
+
+static Scanner input = new Scanner(System.in);
+static int B = input.nextInt();
+static int H = input.nextInt();
+static Boolean flag = B > 0 && H > 0;
+
+static{
+        if(!flag){
+            System.out.println("java.lang.Exception: Breadth and height must be positive");
+        }
+}
+      }
+
+____________________________________________________________________________
+nombre premier 
+
+
+public static boolean Premier(int N) {
+		boolean flag=true;
+
+		for(int i=2;i<N;i++)
+		{
+			if(N % i == 0) {
+		        flag = false;
+		        break;			
+		        }
+		}
+	return flag;}
+
+
+int N=23;
+
+if(Premier(N)){
+	   			System.out.println(N + " est un nombre premier");
+				int compteur=0;
+
+				for(int i=2;i<N;i++)
+				{
+					if(Premier(i)) {
+					compteur += 1;
+					System.out.println(i + " est un nombre premier");}
+					  
+					if(compteur==4)break;
+						
+				}
+			  }
+ else
+			     System.out.println(N + " n'est pas un nombre premier");
+			  
